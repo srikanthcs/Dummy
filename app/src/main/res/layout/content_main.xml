@@ -14,9 +14,11 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="300dp"
         android:layout_centerHorizontal="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tableLayout">
 
         <TableRow
             android:layout_width="fill_parent"
@@ -302,4 +304,23 @@
 
 
     </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Randomize"
+        android:id="@+id/random"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickRandom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/start"
+        android:layout_below="@+id/random"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:onClick="startGame" />
 </RelativeLayout>
